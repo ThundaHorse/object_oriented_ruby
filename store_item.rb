@@ -22,10 +22,10 @@ class Store
   # Allows re-definability outside of class 
   attr_writer :item, :price, :color 
 
-  def initialize(item, price, color)
-    @item = item 
-    @price = price 
-    @color = color 
+  def initialize(input)
+    @item = input[:item]
+    @price = input[:price]
+    @color = input[:color] 
   end 
 
   def info 
@@ -34,8 +34,5 @@ class Store
 end 
 
 # store = Store.new("chips", 4, "yellow") 
-store = Store.new('banana', 100000, 'green')
-p store.item 
-p store.price 
-p store.color 
+store = Store.new({item: 'banana', price: 100000, color: 'green'})
 p store.info
