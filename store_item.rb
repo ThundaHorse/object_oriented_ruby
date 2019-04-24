@@ -29,9 +29,8 @@ class Store
   end 
 
   def info 
-    "The item is a #{@item}. It is $#{price} and is #{@color}. Le wow." 
+    "The item is a #{@item} and it's $#{price} and #{@color}. Le wow." 
   end 
-
 end 
 
 # store = Store.new("chips", 4, "yellow") 
