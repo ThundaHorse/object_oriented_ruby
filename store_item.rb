@@ -31,5 +31,10 @@ class Store
   end 
 end 
 
-store = Store.new({item: 'banana', price: 100000, color: 'green'})
+store = Store.new(
+                  item: 'banana', 
+                  price: 100000, 
+                  color: 'green'
+                  )
 p store.info
+
