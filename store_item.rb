@@ -37,4 +37,3 @@ store = Store.new(
                   color: 'green'
                   )
 p store.info
-
