@@ -31,9 +31,30 @@ class Store
   end 
 end 
 
+class Food < Store 
+  def initialize(input)
+    @life = input[:shelf_life]
+    super 
+  end 
+
+  def shelf_life
+    @life 
+  end 
+
+end 
+
 store = Store.new(
                   item: 'banana', 
                   price: 100000, 
                   color: 'green'
                   )
-p store.info
+# p store.info
+
+food = Food.new(
+                item: "Kiwi", 
+                price: 1, 
+                color: "brown", 
+                shelf_life: 10
+                )
+
+p food.shelf_life
