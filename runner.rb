@@ -21,4 +21,3 @@ p food.info
 p store.hours_of_operation
 p store.item_lookup
 p store.affordable?
-c
