@@ -37,8 +37,6 @@ store = Store.new(
                   price: 100000, 
                   color: 'green'
                   )
-
-
 food = Food.new(
                 item: "Kiwi", 
                 price: 1, 
