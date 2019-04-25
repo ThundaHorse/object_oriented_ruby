@@ -2,14 +2,12 @@ require "./store_traits.rb"
 require "./store.rb"
 require "./food.rb"
 
-store = Store.new(
+store = StoreFront::Store.new(
                   item: 'banana', 
                   price: 100000, 
                   color: 'green'
                   )
-
-
-food = Food.new(
+food = StoreFront::Food.new(
                 item: "Kiwi", 
                 price: 1, 
                 color: "brown", 
