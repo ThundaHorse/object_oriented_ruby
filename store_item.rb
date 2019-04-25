@@ -1,22 +1,12 @@
-# item1 = {
-#   "item" => "Lays Potato Chips", 
-#   "price" => 4, 
-#   "color" => "Yellow" 
-# }
-
-# item2 = {
-#   item: "Fruit by the foot", 
-#   price: 2, 
-#   color: "multi-color" 
-# }
-
-# item3 = {
-#   "item" => "Mountin Dew", 
-#   "price" => 2, 
-#   "color" => "green" 
-# }
+module Traits 
+  def hours_of_operation
+    "Open and close: Whenever we feel like it."
+  end 
+end 
 
 class Store 
+  include Traits
+
   attr_reader :item, :price, :color 
   attr_writer :item, :price, :color 
 
@@ -27,20 +17,19 @@ class Store
   end 
 
   def info 
-    "The item is a #{@item} and it's $#{price} and #{@color}. Le wow." 
-  end 
+  "The item is a #{@item} and it's $#{price} and #{@color}. Le wow." 
+  end
 end 
 
 class Food < Store 
   def initialize(input)
     @life = input[:shelf_life]
-    super 
+    super
   end 
 
   def shelf_life
     @life 
-  end 
-
+  end
 end 
 
 store = Store.new(
@@ -48,7 +37,7 @@ store = Store.new(
                   price: 100000, 
                   color: 'green'
                   )
-# p store.info
+
 
 food = Food.new(
                 item: "Kiwi", 
@@ -57,4 +46,4 @@ food = Food.new(
                 shelf_life: 10
                 )
 
-p food.shelf_life
+p store.hours_of_operation
