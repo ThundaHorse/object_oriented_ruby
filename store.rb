@@ -13,6 +13,6 @@ class Store
   end 
 
   def info 
-  "The item is a #{@item} and it's $#{price} and #{@color}. Le wow." 
+  "The item is a #{@item} and it's $#{price} and #{@color}. Le wow. 😎" 
   end
 end 
