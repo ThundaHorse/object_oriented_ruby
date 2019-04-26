@@ -5,7 +5,7 @@
 
 #   5.times do 
 #     foods = gets.chomp
-#     food_array << foods 
+#     food_array << foods
 #   end 
 
 #   counter = 1
@@ -13,9 +13,6 @@
 #     puts "#{counter}. #{food_item}"
 #     counter += 1
 #   end 
-
-
-
 # end 
 
 # program_for_food
@@ -50,25 +47,32 @@
 # end 
 
 # Problem 3 
-def banking 
-  info = [] 
-  hashy = Hash.new(0)
+# def banking 
+#   info = [] 
+#   hashy = Hash.new(0)
 
-  5.times do 
-    puts "What's your first name?"
-    hashy[:first_name = gets.chomp]
+#   5.times do 
+#     puts "What is your first name?" 
+#     output = gets.chomp 
+#     hashy["first_name"] = output 
+#     puts "What is your last name?" 
+#     output = gets.chomp 
+#     hashy["last_name"] = output 
+#     puts "What is your email address?" 
+#     output = gets.chomp 
+#     hashy["email"] = output 
+#     hashy['acct_number'] = rand(10**10)
+#     info << hashy 
+#     hashy = Hash.new(0)
+#   end 
 
-    puts "What's your last name?" 
-    hashy[:last_name = gets.chomp] 
+#   info.each do |k|
+#     k.each do |i,v| 
+#       puts "#{i}: #{v}"
+#     end 
+#   end 
+# end 
 
-    puts "What's your email?"
-    hashy[:email = gets.chomp]
+# banking
 
-    info << hashy 
-    hashy = {}
-  end 
-
-  p info
-end 
-
-banking
+# Problem 4 
