@@ -76,3 +76,29 @@
 # banking
 
 # Problem 4 
+# def grouper(n)
+#   student_array = [] 
+#   counter = 0
+#   output = "Group: " 
+
+#   n.times do 
+#     puts "Please enter a student's name." 
+#     student_name = gets.chomp 
+#     student_array << student_name 
+#   end 
+
+#   i = 0 
+#   while i < student_array.length 
+#     output += " #{student_array[i]}" 
+#     counter += 1 
+    
+#     if counter == 2
+#       puts output
+#       output = "Group: "
+#       counter = 0 
+#     end 
+#     i += 1 
+#   end 
+# end 
+
+# grouper(6)
